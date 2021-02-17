@@ -783,10 +783,12 @@ h1, h2, h3, h4, h5, h6, figure {
   opacity: 0.8;
 }
 .work:hover .desc h3 {
+  color: #000;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 .work:hover .desc span {
+  color: rgba(0, 0,0, 0.9);
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
