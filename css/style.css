@@ -750,6 +750,7 @@ h1, h2, h3, h4, h5, h6, figure {
   transition: 0.3s;
 }
 .work .desc h3 {
+  color : #000;
   font-size: 20px;
   -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
   transition: transform 0.3s, opacity 0.3s;
@@ -767,7 +768,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 @media screen and (max-width: 768px) {
   .work .desc {
-    opacity: 1;
+    opacity: 0.8;
     background: rgba(255, 255, 255, 0.6);
   }
   .work .desc h3 {
@@ -779,6 +780,7 @@ h1, h2, h3, h4, h5, h6, figure {
     transform: translate3d(0, 0, 0);
   }
 }
+
 .work:hover .desc {
   opacity: 0.8;
 }
@@ -992,10 +994,20 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #fh5co-footer {
+  background :rgba(49, 155, 204, 1);
   padding: 50px 0;
   float: left;
   width: 100%;
 }
+#fh5co-footer h2 {
+	font-weight: bold;
+	color: white;
+}
+#fh5co-footer li a i{
+	color: white;
+	font-size: 1.5em;
+}
+
 #fh5co-footer p:last-child {
   margin-bottom: 0;
 }
@@ -1044,6 +1056,13 @@ h1, h2, h3, h4, h5, h6, figure {
 
 input[type="text"] {
   height: 50px;
+}
+
+input:valid {
+  border-color: rgba(49, 155, 204, 1);
+}
+input:invalid:not(:placeholder-shown) {
+  border-color: red;
 }
 
 .form-group {
@@ -1438,7 +1457,6 @@ input[type="text"] {
   position: fixed;
   top: 55px;
   right: 15px;
-  bottom: 15px;
   left: 15px;
   z-index: 9999;
   overflow-y: auto;
@@ -1466,7 +1484,7 @@ input[type="text"] {
 }
 
 .mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
-  color: #ffb727;
+  color: rgba(49,155,204,1);
   text-decoration: none;
 }
 
@@ -1553,6 +1571,27 @@ input[type="text"] {
   background: rgba(25, 28, 31, 0.8);
 }
 
+@media (min-width: 992px) {
+	.d-lg-none {
+    display: none!important;
+	}
+}
+
+@media (min-width: 992px) {
+	.d-lg-block {
+    display: block!important;
+	}
+}
+
+.d-none {
+    display: none;
+}
+
+
+
+[type=button], [type=reset], [type=submit], button {
+    -webkit-appearance: button;
+}
 
 
 /*# sourceMappingURL=style.css.map */
